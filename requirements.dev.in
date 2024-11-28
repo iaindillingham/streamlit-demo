@@ -1,0 +1,5 @@
+coverage
+pre-commit
+pytest
+ruff
+watchdog
