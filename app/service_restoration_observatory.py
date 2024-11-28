@@ -57,9 +57,9 @@ streamlit.altair_chart(
                 range=[[1, 1], [4, 2], [0]],
             ),
         ),
-        strokeWidth=altair.condition(
-            altair.datum.type == MEDIAN, altair.value(1), altair.value(0.5)
-        ),
+        strokeWidth=altair.when(altair.datum.type == MEDIAN)
+        .then(altair.value(1))
+        .otherwise(altair.value(0.5)),
     ),
     use_container_width=True,
 )
