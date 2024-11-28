@@ -3,9 +3,9 @@ import pandas
 import streamlit
 
 
-PERCENTILE = "percentile"
-DECILE = "decile"
-MEDIAN = "median"
+PERCENTILE = "Percentile"
+DECILE = "Decile"
+MEDIAN = "Median"
 
 systolic_bp_url = "https://jobs.opensafely.org/service-restoration-observatory/sro-key-measures-dashboard/published/01GGZ1273Y8PM2QYPWBDXWT433/"
 systolic_bp = pandas.read_csv(systolic_bp_url, parse_dates=["date"])
