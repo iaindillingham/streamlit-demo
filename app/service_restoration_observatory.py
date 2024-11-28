@@ -48,7 +48,7 @@ streamlit.altair_chart(
     .encode(
         x=altair.X("date", title=None),
         y=altair.Y("value", title="Rate per 1000 registered patients"),
-        detail=PERCENTILE,
+        detail="percentile",
         strokeDash=altair.StrokeDash(
             "type",
             title=None,
